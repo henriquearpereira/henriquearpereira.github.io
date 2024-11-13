@@ -32,7 +32,6 @@ body {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1rem;
-    text-align: center;
 }
 
 .section h2 {
@@ -40,18 +39,30 @@ body {
     margin-bottom: 1rem;
 }
 
-.content {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: left;
+/* About Container */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
+/* About Text */
+.about-text {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+/* Profile Picture */
 .profile-picture img {
-    width: 200px; /* Increased width */
-    height: 200px; /* Increased height */
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 1rem; /* Centered with margin below */
+    width: 100%; /* Full size of the containing div */
+    max-width: 690px;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* Skills Section */
