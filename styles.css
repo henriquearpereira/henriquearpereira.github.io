@@ -1,133 +1,172 @@
-/* General Reset */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif; /* Font set to Helvetica */
 }
 
 body {
-    background-color: #f4f4f9;
+    font-family: 'Helvetica', sans-serif;
     color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
 }
 
-/* Header Section */
-.header {
-    background-color: #1a1a72; /* Dark blue */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #1a1a72;
     color: #fff;
+    padding-top: 1rem;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header h1 {
     text-align: center;
-    padding: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-.header h1 {
-    font-size: 2.5rem;
+header p {
+    text-align: center;
+    font-size: 1rem;
 }
 
-.header p {
-    font-size: 1.2rem;
+/* About Me and Photo Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
 }
 
-/* About Me Section */
-.section {
-    max-width: 900px;
+#about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#about .about-content {
+    max-width: 500px;
+    text-align: left;
+    margin-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    #about {
+        flex-direction: row;
+    }
+}
+
+/* Career Path Section */
+#career {
+    max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
 }
 
-.section h2 {
+#career h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-}
-
-/* About Container */
-.about-container {
-    display: flex;
-    align-items: center; /* Center align the items vertically */
-    gap: 2rem;
-}
-
-/* About Text */
-.about-text {
-    width: 50%; /* Occupies half the screen */
-    text-align: left;
-}
-
-.about-text p {
-    margin-bottom: 1rem;
-}
-
-/* Profile Picture */
-.profile-picture {
-    width: 25%; /* Reduces image size to 1/4 of container */
     text-align: center;
 }
 
-.profile-picture img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Skills Section */
-.skills-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid #1a1a72;
     margin-top: 2rem;
 }
 
-.skill-category {
-    background-color: #e0e0f1;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem;
-    width: 90%;
+.timeline-item {
+    position: relative;
+    padding: 1rem 0;
+    margin-left: 2rem;
 }
 
-.skill-category h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.1rem;
+    top: 1.3rem;
+    width: 15px;
+    height: 15px;
+    background-color: #1a1a72;
+    border-radius: 50%;
 }
 
-/* Projects Section */
-.projects-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.project {
-    background-color: #e6f2ff;
-    border: 1px solid #b3d9ff;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 90%;
-    text-align: left;
-}
-
-.project h3 {
-    font-size: 1.5rem;
+.timeline-date {
+    font-weight: bold;
+    font-size: 1.1rem;
     color: #1a1a72;
     margin-bottom: 0.5rem;
 }
 
-.project p {
-    font-size: 1rem;
+.timeline-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
     color: #333;
 }
 
-/* Footer Section */
-.footer {
+.timeline-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.timeline-content p strong {
+    font-weight: bold;
+    color: #1a1a72;
+}
+
+@media (min-width: 768px) {
+    .timeline-item {
+        padding: 1.5rem 0;
+    }
+
+    .timeline-date {
+        font-size: 1.2rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .timeline-content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Footer */
+footer {
     text-align: center;
     padding: 1rem;
-    background-color: #1a1a72;
+    background: #1a1a72;
     color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
     font-size: 0.9rem;
 }
 
-.footer a {
-    color: #fff;
-    text-decoration: none;
+/* General Section Styling */
+.section {
+    padding: 2rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    color: #1a1a72;
+    margin-bottom: 1rem;
 }
