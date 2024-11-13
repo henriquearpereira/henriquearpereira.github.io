@@ -25,7 +25,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #343a40;
+    background-color: #003366; /* Dark blue */
     color: #fff;
 }
 
@@ -68,6 +68,18 @@ a:hover {
     margin-bottom: 20px;
 }
 
+/* Profile Picture Styles */
+.profile-picture {
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
 /* Project Styles */
 .project {
     background-color: #fff;
@@ -89,7 +101,7 @@ a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #343a40;
+    background-color: #003366; /* Dark blue */
     color: #fff;
     text-align: center;
     padding: 20px;
