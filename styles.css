@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif; /* Font set to Helvetica */
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 
 /* About Me Section */
 .section {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 1rem;
     text-align: center;
@@ -40,11 +40,18 @@ body {
     margin-bottom: 1rem;
 }
 
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .profile-picture img {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
     border-radius: 50%;
-    margin: 1rem auto;
+    display: block;
+    margin: 0 auto 1rem; /* Centered with margin below */
 }
 
 /* Skills Section */
