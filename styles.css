@@ -42,15 +42,14 @@ body {
 /* About Container */
 .about-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Center align the items vertically */
     gap: 2rem;
 }
 
 /* About Text */
 .about-text {
-    flex: 1;
+    width: 50%; /* Occupies half the screen */
     text-align: left;
-    max-width: 500px;
 }
 
 .about-text p {
@@ -58,9 +57,13 @@ body {
 }
 
 /* Profile Picture */
+.profile-picture {
+    width: 25%; /* Reduces image size to 1/4 of container */
+    text-align: center;
+}
+
 .profile-picture img {
-    width: 100%; /* Full size of the containing div */
-    max-width: 690px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
