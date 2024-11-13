@@ -3,86 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI Engineer Portfolio - Showcasing Business & Biomedical Projects">
     <title>Henrique Pereira - AI Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <h1 class="logo">Henrique Pereira</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Henrique Pereira</h1>
+        <p>AI Engineer | Backend & Data Science Specialist</p>
     </header>
 
+    <!-- About Me Section -->
     <section id="about" class="section">
         <div class="content">
             <div class="profile-picture">
-                <img src="your-photo.png" alt="Henrique Pereira">
+                <img src="your-photo.jpg" alt="Henrique Pereira">
             </div>
             <h2>About Me</h2>
-            <p>I'm an AI engineer with a background in biomedical engineering, passionate about leveraging machine learning and data science to solve real-world problems in both business and healthcare.</p>
-            <p>Currently focused on AI-driven solutions for a range of industries, including e-commerce, healthcare, and business analytics.</p>
+            <p>Hi, I'm Henrique Pereira, an AI engineer with a background in biomedical engineering and a passion for using AI to tackle meaningful, real-world problems. My journey began with a fascination for data science and machine learning, where I discovered the immense potential of AI to bridge sectors from healthcare to business.</p>
+
+            <p>With a strong foundation in both <b>Python</b> and <b>backend engineering</b>, I’ve developed solutions that integrate AI into everyday applications, from creating intelligent chat systems for business to building robust search engines that leverage data science and machine learning.</p>
+
+            <p>Currently, I specialize in AI-driven solutions that help companies make better, data-driven decisions. My experience spans a variety of technologies including <b>TensorFlow</b>, <b>scikit-learn</b>, <b>SQL</b>, and <b>ElasticSearch</b>, as well as cloud platforms like <b>Azure</b>, <b>AWS</b>, and <b>Google Cloud Platform</b>. I have also worked with <b>NoSQL databases</b> and tools like <b>Docker</b> and <b>Spark</b> to streamline backend architectures and optimize workflows.</p>
+
+            <p>In addition to my technical expertise, I'm driven by a vision to create intelligent solutions that improve both business performance and social outcomes. I believe in the power of technology to drive change and am always on the lookout for new challenges and opportunities that push the boundaries of what's possible in AI and data science.</p>
+
+            <p>When I’m not developing AI models, you’ll find me traveling, learning about new cultures, and seeking fresh perspectives to inspire my work. Collaboration and diverse experiences fuel my creativity and problem-solving approach, making every project a chance to grow and make a real impact.</p>
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Core Languages & Tools</h3>
+                <p>Python, SQL, ElasticSearch, NoSQL, Azure, AWS, GCP, TensorFlow, TigerGraph, scikit-learn, Spark, Pandas, Docker</p>
+            </div>
+            <div class="skill-category">
+                <h3>Additional Languages</h3>
+                <p>C, C++, Matlab, JavaScript</p>
+            </div>
+            <div class="skill-category">
+                <h3>Data & AI Tools</h3>
+                <p>Hadoop, PowerBI, Cloudera, Neo4j</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="section">
-        <div class="content">
-            <h2>Projects</h2>
-
+        <h2>Projects</h2>
+        <div class="projects-grid">
             <div class="project">
-                <h3>1. Titanic Problem Resolution</h3>
-                <p>Developed a machine learning model to predict the survival chances of passengers aboard the Titanic using historical data.</p>
-                <p><strong>Technologies:</strong> Python, Scikit-learn, Data preprocessing, Model evaluation</p>
-                <a href="https://github.com/yourusername/titanic" target="_blank">View on GitHub</a>
+                <h3>AI-Powered Business Chatbot</h3>
+                <p>Developed a dynamic chatbot using Python, TensorFlow, and ElasticSearch to enhance customer interaction for a retail company. The chatbot automates common inquiries and uses NLP to understand customer sentiment, reducing manual support hours and improving response times.</p>
             </div>
-
             <div class="project">
-                <h3>2. AI-Powered Business Chatbot</h3>
-                <p>Created a chatbot for e-commerce customer support, capable of answering inquiries, processing orders, and providing recommendations.</p>
-                <p><strong>Technologies:</strong> Python, Rasa, Flask, MongoDB</p>
-                <a href="https://github.com/yourusername/business-chatbot" target="_blank">View on GitHub</a>
+                <h3>Data-Driven Search Engine</h3>
+                <p>Built a search engine leveraging data science and machine learning to provide real-time, relevant results for business queries. The system uses ElasticSearch, SQL, and scikit-learn for high-performance data retrieval and was implemented to optimize product discovery in an e-commerce environment.</p>
             </div>
-
             <div class="project">
-                <h3>3. Customer Segmentation Using K-means</h3>
-                <p>Implemented a K-means clustering model to segment customers based on purchasing behavior for targeted marketing.</p>
-                <p><strong>Technologies:</strong> Python, Scikit-learn, Pandas, K-means clustering</p>
-                <a href="https://github.com/yourusername/customer-segmentation" target="_blank">View on GitHub</a>
+                <h3>Predictive Analytics for Financial Forecasting</h3>
+                <p>Designed predictive models in Python and Spark for financial trend analysis, helping companies forecast market shifts and customer behavior. This project leveraged big data tools such as Hadoop and PowerBI to visualize patterns and drive data-informed decisions.</p>
             </div>
-
             <div class="project">
-                <h3>4. Predictive Analytics for Market Trends</h3>
-                <p>Built a predictive model to forecast market trends using historical financial data and machine learning techniques.</p>
-                <p><strong>Technologies:</strong> Python, Scikit-learn, Time-series forecasting, Pandas</p>
-                <a href="https://github.com/yourusername/market-trends" target="_blank">View on GitHub</a>
-            </div>
-
-            <div class="project">
-                <h3>5. AI for Disease Classification</h3>
-                <p>Developed a machine learning model to classify diseases like diabetes or heart disease based on patient data.</p>
-                <p><strong>Technologies:</strong> Python, Scikit-learn, Healthcare dataset, Model training</p>
-                <a href="https://github.com/yourusername/disease-classification" target="_blank">View on GitHub</a>
+                <h3>Titanic Survival Prediction</h3>
+                <p>Completed the classic Titanic machine learning problem using scikit-learn and Python to predict survival based on passenger data. This project demonstrates foundational skills in data cleaning, feature engineering, and model evaluation, serving as a showcase of my analytical approach.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="content">
-            <h2>Contact</h2>
-            <p>Feel free to get in touch with me for collaborations or opportunities:</p>
-            <p>Email: <a href="mailto:henriquealvesrpereira@gmail.com">henriquealvesrpereira@gmail.com</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Henrique Pereira | AI Engineer</p>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Contact: <a href="mailto:henriquealvesrpereira@gmail.com">henriquealvesrpereira@gmail.com</a></p>
+        <p>© 2024 Henrique Pereira | AI Engineer</p>
     </footer>
+
 </body>
 </html>
