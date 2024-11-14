@@ -12,12 +12,6 @@ body {
     background-color: #f4f4f9;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
 /* Header */
 header {
     background: #1a1a72;
@@ -25,23 +19,32 @@ header {
     padding-top: 1rem;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
+    text-align: center;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
 }
 
 header p {
-    text-align: center;
     font-size: 1rem;
+}
+
+/* General Section Styling */
+.section {
+    width: 85%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* About Me Section */
 #about {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
@@ -50,9 +53,7 @@ header p {
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 2rem;
-    width: 80%;
 }
 
 .about-text {
@@ -68,40 +69,36 @@ header p {
 }
 
 .profile-picture img {
-    width: 25%;
+    width: 200px;
+    height: auto;
     border-radius: 8px;
 }
 
 /* Career Section */
-#career {
-    padding: 2rem 0;
-    background: #fff;
+#career .career-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .career-item {
-    margin-bottom: 1.5rem;
     padding: 1rem;
-    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .career-item h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
     color: #1a1a72;
+    margin-bottom: 0.5rem;
 }
 
 /* Technical Skills Section */
-#skills {
-    padding: 2rem 0;
-    background: #fff;
-}
-
 .skills-container {
     display: flex;
-    justify-content: space-between;
     gap: 2rem;
+    justify-content: space-between;
 }
 
 .skill-category {
@@ -110,8 +107,8 @@ header p {
 
 .skill-category h3 {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
     color: #1a1a72;
+    margin-bottom: 1rem;
 }
 
 .skill-category ul {
@@ -120,10 +117,6 @@ header p {
 }
 
 /* Projects Section */
-#projects {
-    padding: 2rem 0;
-}
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -135,12 +128,13 @@ header p {
     padding: 1.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
     color: #1a1a72;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
