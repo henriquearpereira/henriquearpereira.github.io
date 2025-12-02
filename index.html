@@ -1,146 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henrique Pereira - AI Engineer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henrique Pereira | AI Systems Architect</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  </head>
+  <body class="bg-gray-50 font-sans antialiased">
+    <div id="app"></div>
 
-    <!-- Header Section -->
-    <header class="header">
-        <h1>Henrique Pereira</h1>
-        <p>AI Engineer | Backend & Data Science Specialist</p>
-    </header>
-
-    <!-- About Me Section -->
-    <section id="about" class="section">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hi, I'm Henrique Pereira, an AI engineer with a background in biomedical engineering and a passion for using AI to tackle meaningful, real-world problems. My journey began with a fascination for data science and machine learning, where I discovered the immense potential of AI to bridge sectors from healthcare to business.</p>
-
-                <p>With a strong foundation in both <b>Python</b> and <b>backend engineering</b>, I’ve developed solutions that integrate AI into everyday applications, from creating intelligent chat systems for business to building robust search engines that leverage data science and machine learning.</p>
-
-                <p>Currently, I specialize in AI-driven solutions that help companies make better, data-driven decisions. My experience spans a variety of technologies including <b>TensorFlow</b>, <b>scikit-learn</b>, <b>SQL</b>, and <b>ElasticSearch</b>, as well as cloud platforms like <b>Azure</b>, <b>AWS</b>, and <b>Google Cloud Platform</b>. I have also worked with <b>NoSQL databases</b> and tools like <b>Docker</b> and <b>Spark</b> to streamline backend architectures and optimize workflows.</p>
-
-                <p>In addition to my technical expertise, I'm driven by a vision to create intelligent solutions that improve both business performance and social outcomes. I believe in the power of technology to drive change and am always on the lookout for new challenges and opportunities that push the boundaries of what's possible in AI and data science.</p>
-
-                <p>When I’m not developing AI models, you’ll find me traveling, learning about new cultures, and seeking fresh perspectives to inspire my work. Collaboration and diverse experiences fuel my creativity and problem-solving approach, making every project a chance to grow and make a real impact.</p>
-            </div>
-            <div class="profile-picture">
-                <img src="your-photo.png" alt="Henrique Pereira">
-            </div>
-        </div>
-    </section>
-
-    <section id="career" class="section">
-        <h2>Career Path</h2>
-        <div class="career-list">
-            <div class="career-item">
-                <h3>AI Engineer for Sustainability, Glacier - Vienna, Austria </h3>
-                <p><strong>2025 - Present</strong></p>
-                <p>Collaborating on AI-driven projects to advance sustainability goals, leveraging machine learning and data analytics to support environmental initiatives and reduce carbon footprints.</p>
-            </div>
-            
-            <div class="career-item">
-                <h3>AI Engineer, EBCONT - Vienna, Austria</h3>
-                <p><strong>2023 - 2024</strong></p>
-                <p>Worked as a Data Science Consultant in Vienna, designing and optimizing AI engineering solutions for complex big data projects. Specialized in backend integration with technologies like MongoDB, ElasticSearch, and data pipelines for real-time analytics.</p>
-            </div>
-            
-            <div class="career-item">
-                <h3>Junior Data Engineer, DataCentric - Porto, Portugal</h3>
-                <p><strong>2021 - 2023</strong></p>
-                <p>Developed data engineering solutions for large-scale operations, improving data transfer speeds and project timelines in the Azure environment.</p>
-            </div>
-            
-            <div class="career-item">
-                <h3>R&D Lab Assistant, KU Leuven - Leuven, Belgium</h3>
-                <p><strong>2019 - 2020</strong></p>
-                <p>Developed algorithms for 3D aorta reconstruction to assist in autonomous catheter path planning without pre-imaging data.</p>
-            </div>
-            
-            <div class="career-item">
-                <h3>Intern Data Scientist, Untile - Viana, Portugal</h3>
-                <p><strong>2018 - 2019</strong></p>
-                <p>Focused on developing algorithms for medical imaging to improve intravascular catheter navigation precision and diagnostics.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <h2>Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Core Languages & Tools</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>ElasticSearch</li>
-                    <li>NoSQL</li>
-                    <li>Azure</li>
-                    <li>AWS</li>
-                    <li>GCP</li>
-                    <li>TensorFlow</li>
-                    <li>TigerGraph</li>
-                    <li>scikit-learn</li>
-                    <li>Spark</li>
-                    <li>Pandas</li>
-                    <li>Docker</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Additional Languages</h3>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Matlab</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Data & AI Tools</h3>
-                <ul>
-                    <li>Hadoop</li>
-                    <li>PowerBI</li>
-                    <li>Cloudera</li>
-                    <li>Neo4j</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>AI-Powered Business Chatbot</h3>
-                <p>Developed a dynamic chatbot using Python, TensorFlow, and ElasticSearch to enhance customer interaction for a retail company. The chatbot automates common inquiries and uses NLP to understand customer sentiment, reducing manual support hours and improving response times.</p>
-            </div>
-            <div class="project">
-                <h3>Data-Driven Search Engine</h3>
-                <p>Built a search engine leveraging data science and machine learning to provide real-time, relevant results for business queries. The system uses ElasticSearch, SQL, and scikit-learn for high-performance data retrieval and was implemented to optimize product discovery in an e-commerce environment.</p>
-            </div>
-            <div class="project">
-                <h3>Predictive Analytics for Financial Forecasting</h3>
-                <p>Designed predictive models in Python and Spark for financial trend analysis, helping companies forecast market shifts and customer behavior. This project leveraged big data tools such as Hadoop and PowerBI to visualize patterns and drive data-informed decisions.</p>
-            </div>
-            <div class="project">
-                <h3>Titanic Survival Prediction</h3>
-                <p>Completed the classic Titanic machine learning problem using scikit-learn and Python to predict survival based on passenger data. This project demonstrates foundational skills in data cleaning, feature engineering, and model evaluation, serving as a showcase of my analytical approach.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>Contact: <a href="mailto:henriquealvesrpereira@gmail.com">henriquealvesrpereira@gmail.com</a></p>
-        <p>© 2024 Henrique Pereira | AI Engineer</p>
-    </footer>
-
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
