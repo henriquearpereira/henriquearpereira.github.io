@@ -23,13 +23,14 @@
     <div class="md:w-1/3">
       <div class="relative w-32 h-40 md:w-40 md:h-52 mx-auto">
         <div class="absolute -inset-6 bg-[radial-gradient(60%_60%_at_50%_50%,rgba(24,24,27,0.15),rgba(24,24,27,0)_70%)] dark:bg-[radial-gradient(60%_60%_at_50%_50%,rgba(255,255,255,0.08),rgba(255,255,255,0)_70%)] rounded-full"></div>
-        <img src="/your-photo.png" alt="Henrique Pereira" class="relative rounded-xl w-full h-full object-cover ring-1 ring-black/10 dark:ring-white/10 shadow-xl transition" />
+        <img :src="photoUrl" alt="Henrique Pereira" class="relative rounded-xl w-full h-full object-cover ring-1 ring-black/10 dark:ring-white/10 shadow-xl transition" />
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import photoUrl from '../../your-photo.png'
 </script>
 
 <style scoped>
